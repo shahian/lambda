@@ -1,5 +1,8 @@
 package com.shahian;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,18 +10,9 @@ public class Main {
         expressionBody();
         methodParameter();
         variableScop();
+        foreachLoop();
     }
 
-    private static void variableScop() {
-        int c = 5;
-        Calculater calculater = (a, b) -> a + c;
-        System.out.println(calculater.calc(5, 9));
-    }
-
-    private static void methodParameter() {
-        System.out.println(runTester(str -> str.length() > 6, "HamidRezaShahian"));
-        System.out.println(runTester(str -> str.startsWith("Q"), "HamidRezaShahian"));
-    }
 
 
     private static void simple() {
@@ -35,6 +29,22 @@ public class Main {
                 return false;
         };
         System.out.println(testInterface1.test("Shahian"));
+    }
+
+    private static void methodParameter() {
+        System.out.println(runTester(str -> str.length() > 6, "HamidRezaShahian"));
+        System.out.println(runTester(str -> str.startsWith("Q"), "HamidRezaShahian"));
+    }
+
+    private static void variableScop() {
+        int c = 5;
+        Calculater calculater = (a, b) -> a + c;
+        System.out.println(calculater.calc(5, 9));
+    }
+    private static void foreachLoop() {
+        List<String>stringList= Arrays.asList("Hamid"," Reza"," Shahian");
+        stringList.forEach(System.out::print);
+
     }
 
     public static boolean runTester(TestInterface t, String str) {

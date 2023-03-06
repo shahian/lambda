@@ -1,9 +1,46 @@
 # lambda
 Lambda is a feature in Java 8 and later versions that enables the use of functional programming
+
+
+ ## Table of Contents
+1. [Lambda](#lambda)
+2. [Advantages](#advantages)
+3. [Example](#example)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
+### Lambda
+***
+Lambda is a feature in Java 8 and later versions that enables the use of functional programming. It allows developers to write code in a more concise and elegant way, and to create functional interfaces and abstract classes more easily. Lambda expressions are anonymous functions, which means they can be passed as arguments or returned from other functions without any name or type declaration. Lambda expressions can be used to replace anonymous classes and make code more concise and readable.
+ 
+### Advantages
+***
+A list of  benefits of using lambda in the code:
 * Allows developers to write code in a more concise and elegant way 
 * Enables the use of functional interfaces and abstract classes 
 * Lambda expressions are anonymous functions that can be passed as arguments or returned from other functions 
 * Replaces anonymous classes and makes code more concise and readable
+### example
+***
+An example of lambda : 
+```
+private static void expressionBody() {
+        TestInterface testInterface1 = str -> {
+            String s = str.substring(0, str.length() - 1);
+            if (s.length() == str.length()) {
+                return true;
+            } else
+                return false;
+        };
+        System.out.println(testInterface1.test("Shahian"));
+    }
+```
+>In the above code, the expressionBody() method instantiates a TestInterface and assigns it to the testInterface1 variable.</br>
+TestInterface is a functional interface that contains a single abstract method test() which takes a String as input and returns a boolean value.
+
+The lambda expression in the statement provides an implementation of the test() method. It takes the input string and checks if the length of the string after removing the last character is equal to the original string length. If so, it returns true; otherwise, it returns false.
+
+Finally, it prints the value returned by the test() method by passing "Shahian" as the input string.
+
   <!-- 
   ## Table of Contents
 1. [General Info](#general-info)

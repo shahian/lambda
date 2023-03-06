@@ -6,8 +6,7 @@ Lambda is a feature in Java 8 and later versions that enables the use of functio
 1. [Lambda](#lambda)
 2. [Advantages](#advantages)
 3. [Example](#example)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+
 ### Lambda
 ***
 Lambda is a feature in Java 8 and later versions that enables the use of functional programming. It allows developers to write code in a more concise and elegant way, and to create functional interfaces and abstract classes more easily. Lambda expressions are anonymous functions, which means they can be passed as arguments or returned from other functions without any name or type declaration. Lambda expressions can be used to replace anonymous classes and make code more concise and readable.

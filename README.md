@@ -13,7 +13,7 @@ Lambda is a feature in Java 8 and later versions that enables the use of functio
  
 ### Advantages
 ***
-A list of  benefits of using lambda in the code:
+A list of lambda  benefits  in the code:
 * Allows developers to write code in a more concise and elegant way 
 * Enables the use of functional interfaces and abstract classes 
 * Lambda expressions are anonymous functions that can be passed as arguments or returned from other functions 
